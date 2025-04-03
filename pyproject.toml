@@ -24,7 +24,13 @@ classifiers = [
   "Programming Language :: Python :: Implementation :: CPython",
   "Programming Language :: Python :: Implementation :: PyPy",
 ]
-dependencies = []
+dependencies = [
+  "cowsay",
+  "keras",
+  "matplotlib",
+  "tensorflow",
+  "numpy"
+]
 
 [project.urls]
 Documentation = "https://github.com/Rimantas Liulys/hwrclassification#readme"
@@ -34,16 +40,19 @@ Source = "https://github.com/Rimantas Liulys/hwrclassification"
 [tool.hatch.version]
 path = "src/hwrclassification/__about__.py"
 
-[tools.hatch.envs.test]
+[tool.hatch.envs.test]
 dependencies = [
-  "pytest",
-  "pytest-cov",
-  "pytest-watcher"
+  "pytest"
 ]
 
 [[tool.hatch.envs.test.matrix]]
-python = ["3.10"]
+python = ["2.7", "3.8"]
+version = ["42", "3.14"]
 
+[[tool.hatch.envs.test.matrix]]
+python = ["3.10"]
+version = ["9000"]
+features = ["foo", "bar"]
 [tool.hatch.envs.types]
 extra-dependencies = [
   "mypy>=1.0.0",
