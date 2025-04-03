@@ -34,6 +34,16 @@ Source = "https://github.com/Rimantas Liulys/hwrclassification"
 [tool.hatch.version]
 path = "src/hwrclassification/__about__.py"
 
+[tools.hatch.envs.test]
+dependencies = [
+  "pytest",
+  "pytest-cov",
+  "pytest-watcher"
+]
+
+[[tool.hatch.envs.test.matrix]]
+python = ["3.10"]
+
 [tool.hatch.envs.types]
 extra-dependencies = [
   "mypy>=1.0.0",
