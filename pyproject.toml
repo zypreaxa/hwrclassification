@@ -29,7 +29,8 @@ dependencies = [
   "keras",
   "matplotlib",
   "tensorflow",
-  "numpy"
+  "numpy",
+  "jupyter"
 ]
 
 [project.urls]

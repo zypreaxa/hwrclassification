@@ -19,3 +19,25 @@ pip install hwrclassification
 ## License
 
 `hwrclassification` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
+
+## Data collection
+```
+!wget -q https://github.com/sayakpaul/Handwriting-Recognizer-in-Keras/releases/download/v1.0.0/IAM_Words.zip
+```
+```
+!unzip -qq IAM_Words.zip
+```
+```
+!sudo apt install unzip
+```
+```
+!mkdir data
+```
+!mkdir data/words
+```
+```
+!tar -xf IAM_Words/words.tgz -C data/words
+```
+```
+!mv IAM_Words/words.txt data
+```
