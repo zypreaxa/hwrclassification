@@ -339,7 +339,7 @@ class EditDistanceCallback(keras.callbacks.Callback):
             f"Mean edit distance for epoch {epoch + 1}: {np.mean(edit_distances):.4f}"
         )
 
-epochs = 50  # To get good results this should be at least 50.
+epochs = 100  # To get good results this should be at least 50.
 
 model = build_model()
 prediction_model = keras.models.Model(
@@ -354,3 +354,7 @@ history = model.fit(
     epochs=epochs,
     callbacks=[edit_distance_callback],
 )
+
+# Save the model after training
+model.save("handwriting_recognizer.keras")
+print("Model saved to handwriting_recognizer.keras")
