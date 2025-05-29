@@ -9,6 +9,8 @@
 
 - [Installation](#installation)
 - [License](#license)
+- [Data-collection](#data-collection)
+- [NLP-functionality](#nlp-functionality)
 
 ## Installation
 
@@ -33,6 +35,7 @@ pip install hwrclassification
 ```
 !mkdir data
 ```
+```
 !mkdir data/words
 ```
 ```
@@ -41,3 +44,19 @@ pip install hwrclassification
 ```
 !mv IAM_Words/words.txt data
 ```
+
+## NLP functionality
+
+Added NLP functionality:
+- Exporting the transcribed words into texts (export_text_groups.py).
+- Named entity recognition (NER.py)
+- Text summary generation (summary.py)
+- Keyword extraction (keyword_extraction.py)
+
+Additional installations used:
+- pip install spacy
+- pip install "spacy[transformers]"
+- python -m spacy download en_core_web_trf
+- pip install tf-keras
+- pip install tqdm
+- pip install keybert sentence-transformers
