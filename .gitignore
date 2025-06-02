@@ -2,5 +2,5 @@
 *IAM_Words/
 *data/
 *data_output/
-*model/
+*classification/model/handwriting_recognizer.keras
 *node_modules/
