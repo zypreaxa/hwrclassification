@@ -1,6 +1,10 @@
 *IAM_Words.zip
 *IAM_Words/
 *data/
+<<<<<<< HEAD
 *data_output/
 *classification/model/handwriting_recognizer.keras
 *node_modules/
+=======
+*model/
+>>>>>>> parent of bd57f90bb (Added NLP functionality)
