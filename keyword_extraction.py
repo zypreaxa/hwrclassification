@@ -143,7 +143,7 @@ def main():
             writer.writerow(["section", "keyword", "score"])
             writer.writerows(aggregate_rows)
 
-    print(f"\n✅ Keywords extracted for {len(section_files)} sections.")
+    print(f"\n Keywords extracted for {len(section_files)} sections.")
     if args.aggregate_csv:
         print(f"Aggregated CSV written to {args.aggregate_csv!r}")
 

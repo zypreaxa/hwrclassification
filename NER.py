@@ -12,7 +12,7 @@ This script:
  6. Aggregates all entities into a summary CSV.
 
 Usage:
-    python NER.py --text-dir data_output/text_sections --viz-dir data_output/visualizations --out-dir data_output/ner_results --summary-csv data_output/entity_summary.csv --model en_core_web_trf --batch-size 8
+    python NER.py --text-dir data_output/text_sections --viz-dir data_output/visualizations --out-dir data_output/ner_results --model en_core_web_trf --batch-size 8 --summary-csv data_output/entity_summary.csv 
 """
 import argparse
 import json
@@ -118,9 +118,9 @@ def main():
         text_dir=args.text_dir,
         viz_dir=args.viz_dir,
         out_dir=args.out_dir,
-        summary_csv=args.summary_csv,
         model=args.model,
         batch_size=args.batch_size
+        #summary_csv=args.summary_csv
     )
 
 if __name__ == "__main__":

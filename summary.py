@@ -74,7 +74,6 @@ def run_summarization(
         section_id = path.stem
         text = path.read_text(encoding="utf-8")
 
-        # Chunk if necessary
         chunks = chunk_text(text, tokenizer, max_chunk_tokens)
         summary_chunks = []
 
