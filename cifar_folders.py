@@ -90,7 +90,7 @@ def predict_from_directory(directory_path, num_images_to_predict=None):
 
  # Main stuff
 if __name__ == "__main__":
-    test_images_directory = "cats" # Folder of input images
+    test_images_directory = "planes" # Folder of input images
 
 
     print(f"\n--- Predicting for images in directory: {test_images_directory} ---")
